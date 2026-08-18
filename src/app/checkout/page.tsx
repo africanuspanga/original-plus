@@ -42,7 +42,7 @@ export default function CheckoutPage() {
           Order sent to WhatsApp
         </h1>
         <p className="mt-3 max-w-md text-sm leading-relaxed text-ink/55">
-          Your order has been prepared in WhatsApp — just press send if you
+          Your order has been prepared in WhatsApp. Just press send if you
           have not already. We will confirm your order and delivery details
           right away.
         </p>
@@ -91,7 +91,7 @@ export default function CheckoutPage() {
           Checkout
         </h1>
         <p className="mx-auto mt-3 max-w-md text-center text-sm leading-relaxed text-ink/55">
-          Fill in your details — your order is sent straight to our WhatsApp
+          Fill in your details. Your order is sent straight to our WhatsApp
           and we confirm delivery with you personally.
         </p>
 
@@ -144,7 +144,7 @@ export default function CheckoutPage() {
                   autoComplete="street-address"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
-                  placeholder="Street, area, city — e.g. Sinza, Dar es Salaam"
+                  placeholder="Street, area, city, e.g. Sinza, Dar es Salaam"
                   className={inputClass}
                 />
               </div>

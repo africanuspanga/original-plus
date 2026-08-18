@@ -23,7 +23,7 @@ export async function generateMetadata({
   const product = getProduct(slug);
   if (!product) return {};
   return {
-    title: `${product.shortName} — ${formatPrice(product.price)}`,
+    title: `${product.shortName} · ${formatPrice(product.price)}`,
     description: product.description,
     alternates: { canonical: `/products/${product.slug}/` },
     openGraph: {

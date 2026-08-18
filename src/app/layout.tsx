@@ -6,6 +6,7 @@ import { CartProvider } from "@/lib/cart";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import CartToast from "@/components/CartToast";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Original Plus — Premium Skincare in Tanzania",
+    default: "Original Plus | Premium Skincare in Tanzania",
     template: "%s | Original Plus",
   },
   description: site.description,
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     locale: "en_TZ",
     url: site.url,
     siteName: site.name,
-    title: "Original Plus — Premium Skincare in Tanzania",
+    title: "Original Plus | Premium Skincare in Tanzania",
     description: site.description,
     images: [
       {
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Original Plus — Premium Skincare in Tanzania",
+    title: "Original Plus | Premium Skincare in Tanzania",
     description: site.description,
     images: ["/images/og-image.jpg"],
   },
@@ -109,7 +110,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="flex min-h-screen flex-col">
+      <body className="flex min-h-screen flex-col pb-20 md:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -120,6 +121,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <CartToast />
           <WhatsAppFloat />
         </CartProvider>
       </body>

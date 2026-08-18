@@ -3,7 +3,7 @@ export const site = {
   tagline: "Premium Skincare, Made for Your Glow",
   url: "https://www.originalplus.co.tz",
   description:
-    "Original Plus is a premium skincare brand in Dar es Salaam, Tanzania. Shop Yellow Plus, Glow Plus Face Cream, Glow Plus Oil and Active Serum — order easily via WhatsApp.",
+    "Original Plus is a premium skincare brand in Dar es Salaam, Tanzania. Shop Yellow Plus, Glow Plus Face Cream, Glow Plus Oil and Active Serum. Order easily via WhatsApp.",
   phone1: "0756533452",
   phone1Intl: "+255756533452",
   phone2: "0743 908 538",

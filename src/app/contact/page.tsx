@@ -8,7 +8,7 @@ import { defaultWhatsAppMessage, site, whatsappLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Original Plus — call or WhatsApp 0756533452, or visit us at Kariakoo, Mafia & Jangwani Street, Dar es Salaam, Tanzania.",
+    "Contact Original Plus: call or WhatsApp 0756533452, or visit us at Kariakoo, Mafia & Jangwani Street, Dar es Salaam, Tanzania.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="We would love to hear from you"
-        description="Questions about products, orders or your skin? Reach out — we reply fast, in English or Kiswahili."
+        description="Questions about products, orders or your skin? Reach out. We reply fast, in English or Kiswahili."
       />
 
       <section className="bg-white pb-24">
@@ -72,7 +72,7 @@ export default function ContactPage() {
               <Reveal delay={350}>
                 <div className="mt-8 overflow-hidden rounded-3xl shadow-lg ring-1 ring-ink/5">
                   <iframe
-                    title="Original Plus location map — Kariakoo, Dar es Salaam"
+                    title="Original Plus location map: Kariakoo, Dar es Salaam"
                     src="https://www.google.com/maps?q=Kariakoo,+Mafia+Street,+Dar+es+Salaam,+Tanzania&output=embed"
                     className="h-72 w-full border-0"
                     loading="lazy"

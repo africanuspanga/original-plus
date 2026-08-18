@@ -8,7 +8,7 @@ export default function NotFound() {
         This page has gone missing
       </h1>
       <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink/55">
-        The page you are looking for does not exist — but your glow ritual is
+        The page you are looking for does not exist, but your glow ritual is
         only one click away.
       </p>
       <div className="mt-8 flex flex-col gap-3 sm:flex-row">

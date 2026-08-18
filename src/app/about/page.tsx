@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 import WhatsAppCTA from "@/components/home/WhatsAppCTA";
 
 export const metadata: Metadata = {
-  title: "About Us — Our Story",
+  title: "About Original Plus",
   description:
     "Original Plus is a premium Tanzanian skincare brand based in Kariakoo, Dar es Salaam. Learn our story, our promise and why thousands of women trust us with their skin.",
   alternates: { canonical: "/about/" },
@@ -19,11 +19,11 @@ const values = [
   },
   {
     title: "Honest Advice",
-    text: "We recommend what your skin needs — nothing more. Our team gives free, personal skincare guidance to every customer.",
+    text: "We recommend what your skin needs, nothing more. Our team gives free, personal skincare guidance to every customer.",
   },
   {
     title: "Made for You",
-    text: "Our collection is chosen for African skin and the Tanzanian climate — lightweight, protective and deeply nourishing.",
+    text: "Our collection is chosen for African skin and the Tanzanian climate: lightweight, protective and deeply nourishing.",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About Original Plus"
         title="Beauty with confidence, from the heart of Dar es Salaam"
-        description="Original Plus began with a simple belief — every woman deserves skincare that truly works, at a price she can afford."
+        description="Original Plus began with a simple belief: every woman deserves skincare that truly works, at a price she can afford."
       />
 
       {/* Story */}
@@ -64,8 +64,8 @@ export default function AboutPage() {
               <Reveal delay={100}>
                 <div className="mt-6 space-y-5 text-base leading-relaxed text-ink/65">
                   <p>
-                    Original Plus was born in Kariakoo — the beating commercial
-                    heart of Dar es Salaam — where we watched women search
+                    Original Plus was born in Kariakoo, the beating commercial
+                    heart of Dar es Salaam, where we watched women search
                     endlessly for skincare they could trust. Too many products
                     promised everything and delivered nothing.
                   </p>
@@ -77,7 +77,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     Today, thousands of women across Tanzania start their
-                    morning with Original Plus — and we are just getting
+                    morning with Original Plus, and we are just getting
                     started.
                   </p>
                 </div>

@@ -31,7 +31,7 @@ export default function Benefits() {
                 dark
                 eyebrow="Product Benefits"
                 title="Everything your skin has been asking for"
-                description="Each Original Plus formula is built around results you can see and feel — brightness, smoothness and deep, healthy hydration."
+                description="Each Original Plus formula is built around results you can see and feel: brightness, smoothness and deep, healthy hydration."
               />
             </Reveal>
             <ul className="mt-10 grid gap-4 sm:grid-cols-2">

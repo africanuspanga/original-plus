@@ -33,7 +33,7 @@ export default function WhatsAppCTA() {
               </h2>
               <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-ink/70">
                 No sign-ups, no cards, no stress. Message us on WhatsApp, tell
-                us what you need, and we deliver — anywhere in Tanzania.
+                us what you need, and we deliver, anywhere in Tanzania.
               </p>
               <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <a
@@ -42,7 +42,7 @@ export default function WhatsAppCTA() {
                   rel="noopener noreferrer"
                   className="w-full rounded-full bg-ink px-9 py-4 text-center text-sm font-bold tracking-wide text-white transition-transform hover:scale-[1.03] sm:w-auto"
                 >
-                  Chat on WhatsApp — {site.phone1}
+                  Chat on WhatsApp · {site.phone1}
                 </a>
                 <a
                   href={`tel:${site.phone1Intl}`}

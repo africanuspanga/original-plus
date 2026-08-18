@@ -79,7 +79,7 @@ export default function ContactForm() {
         Send via WhatsApp
       </button>
       <p className="text-center text-xs text-ink/50">
-        Your message opens in WhatsApp — we usually reply within minutes.
+        Your message opens in WhatsApp. We usually reply within minutes.
       </p>
     </form>
   );

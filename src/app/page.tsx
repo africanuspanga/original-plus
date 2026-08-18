@@ -2,6 +2,7 @@ import Hero from "@/components/home/Hero";
 import Marquee from "@/components/home/Marquee";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import WhyOriginalPlus from "@/components/home/WhyOriginalPlus";
+import TrustBadge from "@/components/home/TrustBadge";
 import Benefits from "@/components/home/Benefits";
 import BestSellers from "@/components/home/BestSellers";
 import RitualStrip from "@/components/home/RitualStrip";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Marquee />
       <FeaturedProducts />
       <WhyOriginalPlus />
+      <TrustBadge />
       <Benefits />
       <BestSellers />
       <RitualStrip />

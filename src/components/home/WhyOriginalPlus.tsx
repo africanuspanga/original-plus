@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 const pillars = [
   {
     title: "Visible Results",
-    text: "Formulas chosen for one reason — they work. Brighter, smoother, more even skin you can see.",
+    text: "Formulas chosen for one reason: they work. Brighter, smoother, more even skin you can see.",
     icon: (
       <path
         strokeLinecap="round"

@@ -18,7 +18,7 @@ export default function LocationSection() {
             </h2>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-ink/60">
               Walk into our shop for personal skincare advice, or order from
-              anywhere in Tanzania — we deliver to your doorstep.
+              anywhere in Tanzania and we deliver to your doorstep.
             </p>
 
             <address className="mt-8 space-y-5 not-italic">
@@ -71,9 +71,9 @@ export default function LocationSection() {
                 <div>
                   <p className="text-sm font-semibold text-ink">Opening Hours</p>
                   <p className="mt-0.5 text-sm leading-relaxed text-ink/60">
-                    Monday – Saturday: 8:00 – 18:00
+                    Monday - Saturday: 8:00 - 18:00
                     <br />
-                    Sunday: 10:00 – 15:00
+                    Sunday: 10:00 - 15:00
                   </p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function LocationSection() {
           <Reveal delay={150}>
             <div className="overflow-hidden rounded-[2rem] shadow-2xl ring-1 ring-ink/5">
               <iframe
-                title="Original Plus location — Kariakoo, Mafia & Jangwani Street, Dar es Salaam"
+                title="Original Plus location: Kariakoo, Mafia & Jangwani Street, Dar es Salaam"
                 src="https://www.google.com/maps?q=Kariakoo,+Mafia+Street,+Dar+es+Salaam,+Tanzania&output=embed"
                 className="h-[380px] w-full border-0 lg:h-[460px]"
                 loading="lazy"

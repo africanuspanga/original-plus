@@ -15,7 +15,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.35fr] lg:gap-4 lg:px-8">
         {/* Copy */}
         <div className="text-center lg:text-left">
           <Reveal>
@@ -32,7 +32,7 @@ export default function Hero() {
           </Reveal>
           <Reveal delay={200}>
             <p className="mx-auto mt-6 max-w-md text-base leading-relaxed text-ink/60 sm:text-lg lg:mx-0">
-              Premium skincare crafted for luminous, confident skin — delivered
+              Premium skincare crafted for luminous, confident skin, delivered
               across Tanzania.
             </p>
           </Reveal>
@@ -56,13 +56,16 @@ export default function Hero() {
             <dl className="mt-12 flex items-center justify-center gap-8 lg:justify-start">
               {[
                 ["4", "Signature Products"],
-                ["1000s", "Happy Customers"],
+                ["1000", "Happy Customers"],
                 ["24h", "Glass-Skin Glow"],
               ].map(([value, label]) => (
                 <div key={label} className="text-center lg:text-left">
                   <dt className="sr-only">{label}</dt>
                   <dd className="font-display text-2xl font-semibold text-ink">
                     {value}
+                    {value === "1000" && (
+                      <span className="align-top text-sm">s</span>
+                    )}
                   </dd>
                   <dd className="mt-0.5 text-[11px] uppercase tracking-wider text-ink/50">
                     {label}
@@ -75,7 +78,7 @@ export default function Hero() {
 
         {/* Visual */}
         <Reveal delay={200} className="relative">
-          <div className="relative mx-auto max-w-md lg:max-w-none">
+          <div className="relative mx-auto max-w-md lg:max-w-none lg:scale-[1.07] xl:scale-110">
             <div
               className="absolute inset-x-8 bottom-0 top-16 rounded-t-full bg-gradient-to-b from-gold to-gold-dark/80"
               aria-hidden="true"

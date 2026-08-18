@@ -12,7 +12,7 @@ export default function FeaturedProducts() {
           <SectionHeading
             eyebrow="The Collection"
             title="Featured Products"
-            description="Four signature formulas, one promise — visibly radiant, even-toned, confident skin."
+            description="Four signature formulas, one promise: visibly radiant, even-toned, confident skin."
           />
         </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

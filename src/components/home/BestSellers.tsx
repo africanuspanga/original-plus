@@ -11,7 +11,7 @@ export default function BestSellers() {
           <SectionHeading
             eyebrow="Customer Favourites"
             title="Best Sellers"
-            description="The products our customers reorder again and again — loved across Tanzania."
+            description="The products our customers reorder again and again, loved across Tanzania."
           />
         </Reveal>
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

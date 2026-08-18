@@ -112,7 +112,39 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/50 sm:flex-row">
+        {/* Payment methods */}
+        <div className="mt-14 border-t border-white/10 pt-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
+            We accept
+          </p>
+          <ul className="mt-4 flex flex-wrap items-center gap-3">
+            {[
+              ["mpesa.png", "M-Pesa"],
+              ["airtel-money.png", "Airtel Money"],
+              ["halopesa.png", "Halo Pesa"],
+              ["mixx.png", "Mixx by Yas (Tigo Pesa)"],
+              ["selcom.png", "Selcom"],
+            ].map(([file, label]) => (
+              <li
+                key={file}
+                className="flex h-11 items-center rounded-xl bg-white px-4"
+              >
+                <Image
+                  src={`/images/payments/${file}`}
+                  alt={label}
+                  width={120}
+                  height={40}
+                  className="h-6 w-auto object-contain"
+                />
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-xs text-white/50">
+            Mobile money and pay on delivery available.
+          </p>
+        </div>
+
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/50 sm:flex-row">
           <p>
             © {new Date().getFullYear()} Original Plus. All rights reserved.
           </p>

@@ -7,7 +7,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Shop All Skincare Products",
   description:
-    "Shop the full Original Plus collection — Yellow Plus, Glow Plus Face Cream, Glow Plus Oil and Active Serum. Premium skincare delivered across Tanzania.",
+    "Shop the full Original Plus collection: Yellow Plus, Glow Plus Face Cream, Glow Plus Oil and Active Serum. Premium skincare delivered across Tanzania.",
   alternates: { canonical: "/shop/" },
 };
 
@@ -34,7 +34,7 @@ export default function ShopPage() {
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-ink/60">
               Message us on WhatsApp and we will help you build the perfect
-              routine for your skin — free advice, no obligation.
+              routine for your skin. Free advice, no obligation.
             </p>
             <a
               href="https://wa.me/255756533452?text=Hello%20Original%20Plus!%20I%20need%20help%20choosing%20the%20right%20product%20for%20my%20skin."

@@ -24,7 +24,7 @@ export default function ProductActions({ product }: { product: Product }) {
     router.push("/checkout/");
   };
 
-  const waMessage = `Hello Original Plus! I would like to order:\n\n${product.name} (${product.size}) x${qty} — TZS ${(
+  const waMessage = `Hello Original Plus! I would like to order:\n\n${product.name} (${product.size}) x${qty} = TZS ${(
     product.price * qty
   ).toLocaleString("en-US")}\n\nPlease confirm my order. Thank you!`;
 
@@ -89,7 +89,7 @@ export default function ProductActions({ product }: { product: Product }) {
       </a>
 
       <p className="text-center text-xs text-ink/50">
-        Questions? Call us on {site.phone1} — we deliver across Tanzania.
+        Questions? Call us on {site.phone1}. We deliver across Tanzania.
       </p>
     </div>
   );

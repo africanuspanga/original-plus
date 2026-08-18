@@ -6,6 +6,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from "react";
@@ -26,6 +27,8 @@ interface CartContextValue {
   setQty: (slug: string, qty: number) => void;
   clear: () => void;
   detailedItems: { product: Product; qty: number }[];
+  /** Name of the most recently added product, shown as a toast notification */
+  toast: string | null;
 }
 
 const CartContext = createContext<CartContextValue | null>(null);
@@ -35,6 +38,8 @@ const STORAGE_KEY = "original-plus-cart";
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
   const [hydrated, setHydrated] = useState(false);
+  const [toast, setToast] = useState<string | null>(null);
+  const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Hydrate the cart from localStorage once on mount (client-only storage)
   useEffect(() => {
@@ -70,6 +75,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
       }
       return [...prev, { slug, qty }];
     });
+    const product = getProduct(slug);
+    if (product) {
+      setToast(product.shortName);
+      if (toastTimer.current) clearTimeout(toastTimer.current);
+      toastTimer.current = setTimeout(() => setToast(null), 2800);
+    }
   }, []);
 
   const remove = useCallback((slug: string) => {
@@ -105,8 +116,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
       setQty,
       clear,
       detailedItems,
+      toast,
     };
-  }, [items, hydrated, add, remove, setQty, clear]);
+  }, [items, hydrated, toast, add, remove, setQty, clear]);
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
@@ -126,7 +138,7 @@ export function buildOrderMessage(
   const lines: string[] = ["Hello Original Plus! I would like to order:", ""];
   detailedItems.forEach(({ product, qty }, i) => {
     lines.push(
-      `${i + 1}. ${product.name} (${product.size}) x${qty} — TZS ${(
+      `${i + 1}. ${product.name} (${product.size}) x${qty} = TZS ${(
         product.price * qty
       ).toLocaleString("en-US")}`
     );

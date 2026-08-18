@@ -23,7 +23,7 @@ export const products: Product[] = [
     image: "/images/products/yellow-plus.jpg",
     tagline: "Our iconic face & body cream for a luminous, even glow.",
     description:
-      "The signature Original Plus cream. Yellow Plus is a rich, fast-absorbing face and body cream that visibly brightens, smooths and evens the skin — giving you that unmistakable Original Plus glow in days, not months.",
+      "The signature Original Plus cream. Yellow Plus is a rich, fast-absorbing face and body cream that visibly brightens, smooths and evens the skin, giving you that unmistakable Original Plus glow in days, not months.",
     benefits: [
       "Visibly brightens and evens skin tone",
       "Fades dark spots and blemishes",
@@ -75,7 +75,7 @@ export const products: Product[] = [
     image: "/images/products/glow-plus-oil.jpg",
     tagline: "Glutathione & Vitamin C serum oil for 24-hour glass skin.",
     description:
-      "A feather-light face and body serum oil powered by Glutathione and Vitamin C. Glow Plus Oil melts into the skin to brighten, soften and restore — leaving a radiant, glass-skin finish that lasts 24 hours.",
+      "A feather-light face and body serum oil powered by Glutathione and Vitamin C. Glow Plus Oil melts into the skin to brighten, soften and restore, leaving a radiant, glass-skin finish that lasts 24 hours.",
     benefits: [
       "Glutathione & Vitamin C brightening complex",
       "Softens knuckles, dark armpits and dark spots",
@@ -100,7 +100,7 @@ export const products: Product[] = [
     image: "/images/products/active-serum.jpg",
     tagline: "Concentrated strong whitening serum for stubborn dark spots.",
     description:
-      "A concentrated treatment serum that targets stubborn dark spots and uneven tone. Active Serum refines, moisturises and renews — the perfect booster to layer under your cream for faster, visible results.",
+      "A concentrated treatment serum that targets stubborn dark spots and uneven tone. Active Serum refines, moisturises and renews, the perfect booster to layer under your cream for faster, visible results.",
     benefits: [
       "Targets stubborn dark spots",
       "Refines and smooths skin texture",
@@ -110,7 +110,7 @@ export const products: Product[] = [
     ],
     howToUse: [
       "Cleanse skin and pat dry.",
-      "Apply 2–3 drops to targeted areas or full face.",
+      "Apply 2-3 drops to targeted areas or full face.",
       "Allow to absorb, then follow with your cream.",
       "Use morning and evening consistently.",
     ],

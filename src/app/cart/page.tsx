@@ -48,7 +48,7 @@ export default function CartPage() {
           Your Cart
         </h1>
         <p className="mt-3 text-center text-sm text-ink/55">
-          Review your order, then check out — we confirm everything on
+          Review your order, then check out. We confirm everything on
           WhatsApp.
         </p>
 

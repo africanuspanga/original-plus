@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { defaultWhatsAppMessage, whatsappLink } from "@/lib/site";
 
 /**
- * Floating WhatsApp button — the brand's whatsapp.png at full size,
+ * Floating WhatsApp button: the brand's whatsapp.png at full size,
  * no background circle behind it.
  */
 export default function WhatsAppFloat() {
@@ -22,7 +22,7 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Original Plus on WhatsApp"
-      className={`group fixed bottom-5 right-5 z-40 transition-all duration-500 ${
+      className={`group fixed bottom-24 right-4 z-40 transition-all duration-500 md:bottom-5 md:right-5 ${
         visible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
       }`}
     >
@@ -34,7 +34,7 @@ export default function WhatsAppFloat() {
         alt=""
         width={56}
         height={56}
-        className="h-14 w-14 drop-shadow-[0_6px_16px_rgba(37,211,102,0.45)] transition-transform duration-300 group-hover:scale-110"
+        className="h-14 w-14 animate-wa-pulse"
         aria-hidden="true"
       />
     </a>
