@@ -47,7 +47,7 @@ export const products: Product[] = [
     price: 35000,
     size: "50g · SPF 50",
     image: "/images/products/glow-plus-face-cream.jpg",
-    tagline: "Daily face cream with SPF 50 protection and a glass-skin finish.",
+    tagline: "Daily face cream with SPF 50 protection and a glass-skin glow.",
     description:
       "A luxurious daily face cream that hydrates, brightens and protects. With SPF 50 and a silky, non-greasy texture, Glow Plus Face Cream keeps your skin radiant and shielded from the Tanzanian sun all day long.",
     benefits: [
@@ -98,11 +98,11 @@ export const products: Product[] = [
     price: 30000,
     size: "30ml",
     image: "/images/products/active-serum.jpg",
-    tagline: "Concentrated strong whitening serum for stubborn dark spots.",
+    tagline: "Concentrated brightening serum for a radiant, glowing complexion.",
     description:
-      "A concentrated treatment serum that targets stubborn dark spots and uneven tone. Active Serum refines, moisturises and renews, the perfect booster to layer under your cream for faster, visible results.",
+      "A concentrated brightening serum that revives dull, uneven skin. Active Serum refines, moisturises and renews, the perfect booster to layer under your cream for a faster, more visible glow.",
     benefits: [
-      "Targets stubborn dark spots",
+      "Boosts natural brightness and glow",
       "Refines and smooths skin texture",
       "Boosts the results of your cream",
       "Deeply moisturising formula",

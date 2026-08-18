@@ -27,7 +27,7 @@ const testimonials = [
     name: "Wema S.",
     location: "Dodoma",
     quote:
-      "Active Serum cleared the stubborn spots on my cheeks that nothing else could touch. My skin has never looked this even.",
+      "Active Serum brought my dull skin back to life. My face looks brighter and more radiant every single week.",
     product: "Active Serum",
   },
   {
