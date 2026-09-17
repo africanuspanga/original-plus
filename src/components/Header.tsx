@@ -75,7 +75,7 @@ export default function Header() {
         {/* Announcement bar */}
         <div className="bg-ink text-white">
           <p className="mx-auto max-w-7xl px-4 py-1.5 text-center text-[11px] font-medium tracking-wide sm:text-xs">
-            Order on WhatsApp {site.phone1} · We deliver across Tanzania
+            Order on WhatsApp {site.phone2} · We deliver across Tanzania
           </p>
         </div>
 

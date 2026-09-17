@@ -8,7 +8,7 @@ import { defaultWhatsAppMessage, site, whatsappLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Original Plus: call or WhatsApp 0756533452, or visit us at Kariakoo, Mafia & Jangwani Street, Dar es Salaam, Tanzania.",
+    "Contact Original Plus: call 0756533452 or call/WhatsApp 0743 908 538, or visit us at Kariakoo, Mafia & Jangwani Street, Dar es Salaam, Tanzania.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -25,7 +25,7 @@ const channels = [
   },
   {
     label: "WhatsApp",
-    value: site.phone1,
+    value: site.phone2,
     href: whatsappLink(defaultWhatsAppMessage),
   },
   {

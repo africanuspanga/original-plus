@@ -42,7 +42,7 @@ export default function WhatsAppCTA() {
                   rel="noopener noreferrer"
                   className="w-full rounded-full bg-ink px-9 py-4 text-center text-sm font-bold tracking-wide text-white transition-transform hover:scale-[1.03] sm:w-auto"
                 >
-                  Chat on WhatsApp · {site.phone1}
+                  Chat on WhatsApp · {site.phone2}
                 </a>
                 <a
                   href={`tel:${site.phone1Intl}`}

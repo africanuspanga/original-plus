@@ -3,11 +3,12 @@ import { products } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
+import { whatsappLink } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Shop All Skincare Products",
   description:
-    "Shop the full Original Plus collection: Yellow Plus, Glow Plus Face Cream, Glow Plus Oil and Active Serum. Premium skincare delivered across Tanzania.",
+    "Shop the full Original Plus collection: Yellow Plus, Glow Plus Face Cream, Glow Plus Oil, Active Serum and Booster White Serum. Premium skincare delivered across Tanzania.",
   alternates: { canonical: "/shop/" },
 };
 
@@ -17,7 +18,7 @@ export default function ShopPage() {
       <PageHeader
         eyebrow="The Shop"
         title="The Original Plus Collection"
-        description="Four signature formulas for radiant, even-toned, deeply hydrated skin. Order online and we deliver anywhere in Tanzania."
+        description="Five signature formulas for radiant, even-toned, deeply hydrated skin. Order online and we deliver anywhere in Tanzania."
       />
       <section className="bg-white pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -37,7 +38,9 @@ export default function ShopPage() {
               routine for your skin. Free advice, no obligation.
             </p>
             <a
-              href="https://wa.me/255756533452?text=Hello%20Original%20Plus!%20I%20need%20help%20choosing%20the%20right%20product%20for%20my%20skin."
+              href={whatsappLink(
+                "Hello Original Plus! I need help choosing the right product for my skin."
+              )}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-block rounded-full bg-ink px-8 py-3.5 text-sm font-bold tracking-wide text-white transition-colors hover:bg-gold hover:text-ink"

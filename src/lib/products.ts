@@ -114,6 +114,30 @@ export const products: Product[] = [
       "Allow to absorb, then follow with your cream.",
       "Use morning and evening consistently.",
     ],
+  },
+  {
+    slug: "booster-white-serum",
+    name: "Booster White Serum",
+    shortName: "Booster White Serum",
+    price: 30000,
+    size: "50ml",
+    image: "/images/products/booster-white-serum.jpg",
+    tagline: "Extra brightening booster for clear knuckles and white dots.",
+    description:
+      "A powerful extra-brightening serum made for the areas that need the most help. Booster White Serum targets dark knuckles, elbows and stubborn white dots, evening out tone and restoring a smooth, luminous finish wherever you apply it.",
+    benefits: [
+      "Extra brightening concentrated formula",
+      "Clears dark knuckles, elbows and joints",
+      "Helps clear white dots and uneven patches",
+      "Evens out stubborn dark areas",
+      "Lightweight, fast-absorbing finish",
+    ],
+    howToUse: [
+      "Cleanse the area and pat dry.",
+      "Apply a few drops directly onto knuckles, elbows or affected areas.",
+      "Massage gently until fully absorbed.",
+      "Use morning and evening for best results.",
+    ],
     badge: "New",
   },
 ];

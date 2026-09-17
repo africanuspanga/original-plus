@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     "Glow Plus face cream",
     "Glow Plus oil",
     "Active Serum",
+    "Booster White Serum",
     "whitening cream Dar es Salaam",
     "beauty products Kariakoo",
     "skincare Dar es Salaam",
@@ -90,7 +91,7 @@ const organizationJsonLd = {
   url: site.url,
   logo: `${site.url}/images/logo-full.png`,
   description: site.description,
-  telephone: site.phone1Intl,
+  telephone: [site.phone1Intl, site.phone2Intl],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Mafia & Jangwani Street, Kariakoo",
