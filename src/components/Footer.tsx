@@ -92,6 +92,11 @@ export default function Footer() {
                   {site.phone2}
                 </a>
               </li>
+              <li>
+                <a href={`tel:${site.phone3Intl}`} className="transition-colors hover:text-gold">
+                  {site.phone3}
+                </a>
+              </li>
               <li className="leading-relaxed">{site.location}</li>
             </ul>
             <a

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useCart } from "@/lib/cart";
-import { site } from "@/lib/site";
+import { defaultWhatsAppMessage, site, whatsappLink } from "@/lib/site";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -75,7 +75,15 @@ export default function Header() {
         {/* Announcement bar */}
         <div className="bg-ink text-white">
           <p className="mx-auto max-w-7xl px-4 py-1.5 text-center text-[11px] font-medium tracking-wide sm:text-xs">
-            Order on WhatsApp {site.phone2} · We deliver across Tanzania
+            Order:{" "}
+            <a href={whatsappLink(defaultWhatsAppMessage)} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+              {site.phone2}
+            </a>{" "}
+            ·{" "}
+            <a href={`tel:${site.phone3Intl}`} className="hover:text-gold">
+              {site.phone3}
+            </a>
+            <span className="hidden sm:inline"> · We deliver across Tanzania</span>
           </p>
         </div>
 

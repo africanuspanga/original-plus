@@ -89,7 +89,7 @@ export default function ProductActions({ product }: { product: Product }) {
       </a>
 
       <p className="text-center text-xs text-ink/50">
-        Questions? Call us on {site.phone1}. We deliver across Tanzania.
+        Questions? Call us on {site.phone1} or {site.phone3}. We deliver across Tanzania.
       </p>
     </div>
   );

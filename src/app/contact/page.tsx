@@ -8,7 +8,7 @@ import { defaultWhatsAppMessage, site, whatsappLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Original Plus: call 0756533452 or call/WhatsApp 0743 908 538, or visit us at Kariakoo, Mafia & Jangwani Street, Dar es Salaam, Tanzania.",
+    "Contact Original Plus: call 0756533452 or 0758 200 288, call/WhatsApp 0743 908 538, or visit us at Kariakoo, Mafia & Jangwani Street, Dar es Salaam, Tanzania.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -24,6 +24,11 @@ const channels = [
     href: `tel:${site.phone2Intl}`,
   },
   {
+    label: "Phone 3",
+    value: site.phone3,
+    href: `tel:${site.phone3Intl}`,
+  },
+  {
     label: "WhatsApp",
     value: site.phone2,
     href: whatsappLink(defaultWhatsAppMessage),
@@ -32,6 +37,7 @@ const channels = [
     label: "Location",
     value: site.location,
     href: site.mapsUrl,
+    wide: true,
   },
 ];
 
@@ -51,7 +57,11 @@ export default function ContactPage() {
             <div>
               <div className="grid gap-4 sm:grid-cols-2">
                 {channels.map((channel, i) => (
-                  <Reveal key={channel.label} delay={i * 80}>
+                  <Reveal
+                    key={channel.label}
+                    delay={i * 80}
+                    className={"wide" in channel ? "sm:col-span-2" : undefined}
+                  >
                     <a
                       href={channel.href}
                       target={channel.href.startsWith("http") ? "_blank" : undefined}

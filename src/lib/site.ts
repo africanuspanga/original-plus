@@ -8,6 +8,8 @@ export const site = {
   phone1Intl: "+255756533452",
   phone2: "0743 908 538",
   phone2Intl: "+255743908538",
+  phone3: "0758 200 288",
+  phone3Intl: "+255758200288",
   whatsapp: "255743908538",
   location: "Kariakoo, Mafia & Jangwani Street, Dar es Salaam, Tanzania",
   locationShort: "Kariakoo, Dar es Salaam",

@@ -91,7 +91,7 @@ const organizationJsonLd = {
   url: site.url,
   logo: `${site.url}/images/logo-full.png`,
   description: site.description,
-  telephone: [site.phone1Intl, site.phone2Intl],
+  telephone: [site.phone1Intl, site.phone2Intl, site.phone3Intl],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Mafia & Jangwani Street, Kariakoo",

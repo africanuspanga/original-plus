@@ -37,4 +37,5 @@ npm run build
 
 - Phone / WhatsApp: 0756 533 452
 - Alt phone: 0743 908 538
+- Alt phone: 0758 200 288
 - Kariakoo, Mafia & Jangwani Street, Dar es Salaam, Tanzania
